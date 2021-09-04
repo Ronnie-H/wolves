@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<style >
+    body{ background-color: #b9522f; /* brown */
+    color: #ffffff;}
+    
+
+</style>
+<body>
+
+
+<div class="container z-depth-1 my-5 px-0">
+
+    <section class="p-5 my-md-5 text-center" 
+    style="background-image: url(wolf1.jpg); background-size: cover; background-position: center center;">
+ 
+
+<!-- Default form register -->
+<form class="text-center border border-light p-5 "  action="register.php" method="POST" >
+
+  <a href="index.html" class="btn pmd-btn-fab btn-danger pmd-ripple-effect btn-lg btn-left" > Back</a>
+
+    <h1><span class="badge badge-pill badge-light"style="color:#b9522f;">Register Here</span></h1><br>
+   
+
+    <div class="form-row mb-4">
+        <div class="col">
+            <!-- First name -->
+            <input type="text" name="fname" id="defaultRegisterFormFirstName" class="form-control" placeholder="First name">
+        </div>
+        <div class="col">
+            <!-- Second name -->
+            <input type="text" name="sname" id="defaultRegisterFormLastName" class="form-control" placeholder="Second name">
+        </div>
+    </div>
+
+    <!-- E-mail -->
+    <input type="email" name="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail">
+  
+
+  <div class="form-row mb-4">
+        <div class="col">
+            <!-- Username -->
+            <input type="text"name="user" class="form-control" placeholder="Username">
+        </div>
+        <div class="col">
+            <!-- Password -->
+            <input type="password" name="pass"id="defaultRegisterFormLastName" class="form-control" placeholder="Password">
+          <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+        At least 8 characters and 1 digit
+    </small>
+        </div>
+    </div>
+  
+    <!-- Phone number -->
+    <input type="text" name="pnumber"id="defaultRegisterPhonePassword" class="form-control" placeholder="Phone number" aria-describedby="defaultRegisterFormPhoneHelpBlock">
+  <br>
+  
+   <!-- Country-->
+    <input type="text" name="country" id="defaultRegisterPhonePassword" class="form-control" placeholder="Country" aria-describedby="defaultRegisterFormPhoneHelpBlock">
+   
+
+   
+
+    <!-- Sign up button -->
+
+    <button class="btn btn-dark my-4 btn-block button5" type="submit">Register</button>
+
+    
+    
+
+</form>
+<!-- Default form register -->
+
+
+
+</section>
+
+</div>
+
+</body>
+</html>
+
+

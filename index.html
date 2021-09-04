@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Wolves</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/css/mdb.min.css" rel="stylesheet">
+
+  <style>
+  body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+    background-color: #b9522f; /* brown */
+    color: #ffffff;
+  }
+  .bg-2 { 
+    background-color: #000000; /* black */
+    color: #ffffff;
+  }
+  .bg-3 { 
+    background-color: #ffffff; /* White */
+    color: #555555;
+  }
+  .bg-4 { 
+    background-color: #000000; /* black */
+    color: #fff;
+  }
+  .bg-5{
+    background-color:#b9522f; /* Brown */
+    color: #fff;
+  }
+
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+    position: fixed;
+    width:100%;
+  }
+  .navbar-nav  li a:hover {
+    color: #b9522f !important;
+        }
+        .modal-content{
+          background-image:url('wolf8.jpg');
+background-size:cover;
+
+        }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#who">Me</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#who">WHO</a></li>
+        <li><a href="#what">WHAT</a></li>
+        <li><a href="#where">WHERE</a></li>
+        <li><a href="#comment">COMMENT</a></li>
+        <li><a href="" class="btn btn-default btn-rounded" data-toggle="modal" data-target="#loginModal"> LOGIN </a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Login Modal -->
+<div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"> &times;</button>
+
+                <h4>LOGIN</h4>
+            </div>
+            <div class="modal-body">
+
+               <form  action="process.php" method="POST">
+                   <div class="form-group">
+                       <label class="sr-only" for="user">Username</label>
+                       <input type="text" name="user" class="form-control input-lg" placeholder="Username" required>
+                      </div><br>
+
+                        <div class="form-group">                           
+                           <label class="sr-only" for="password">Password</label>
+                                     <input type="password" class="form-control input-lg" placeholder="Password" id="pass" name="pass" required="">
+                        </div><br>
+                      
+                 
+                     <div class="text-center mb-3">
+
+          <button type="submit" class="btn  blue-gradient btn-block btn-primary z-depth-1a btn-lg">Login</button>
+       </form>
+        </div>
+               
+                    </form>
+            </div>
+
+            <div class="modal-footer">
+               <div class="modal-footer mx-5 pt-3 mb-1">
+                  
+        <p class="font-weight-bold white-text d-flex justify-content-end">Not a member? <a href="registrationfrm.html" class="blue-text ml-1">
+            Register here</a></p>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+            </div>
+
+        </div>
+        </div>
+    </div>
+
+<!-- First Container -->
+<a id="who"></a>
+<div class="container-fluid bg-1 text-center">
+  <h3 class="margin">Who Am I?</h3>
+  <img src="wolf7.jpg" class="img-responsive img-circle margin" style="display:inline" alt="White wolf" width="350" height="350">
+  <h3>I'm either a Loner or  an Alpha</h3>
+</div>
+
+<!-- Second Container -->
+<a id="what"></a>
+<div class="container-fluid bg-2 text-center">
+  <h3 class="margin">What Am I?</h3>
+  <p>Wolves (Canis Lupus), are related to dogs, or more rightly, dogs are actually related to wolves. Wolves and dogs are quite similar in many ways, however, in most cases, wolves are larger animals. Wolves generally have longer legs than dogs. It is difficult to imagine, however, everything from a pug dog to a doberman comes from the wolf.
+
+The Wolf has developed the capacity to survive in the most inhospitable of climates. The wolves in the high arctic endure several winter months of perpetual darkness. Even in February when sun returns to the north, temperatures of -40°C and bitter winds are common. Other wolves are at home in the desert and the dampness of a humid Gulf Coast swamp. </p>
+  <a href="#" class="btn btn-default btn-lg">
+    <span class="glyphicon glyphicon-search"></span> Search
+  </a>
+</div>
+
+<!-- Third Container (Grid) -->
+<a id="where"></a>
+<div class="container-fluid bg-3 text-center">    
+  <h3 class="margin">Where To Find Me?</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>Wolves are found in North America, Europe, Asia and North Africa. They tend to live in the remote wilderness, though red wolves prefer to live in swamps, coastal prairies and forests. Many people think wolves live only in colder climates, but wolves can live in temperatures that range from minus 70 to 120 degrees F (minus 50 to 48.8 degrees C),</p>
+      <img src="wolf2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      <p>The Eastern wolf — also known as Great Lakes wolf, Eastern timber wolf, Algonquin wolf or deer wolf — has been deemed a distinct species from their Western cousins, according to a review by U.S. Fish and Wildlife Service scientists. Eastern wolves used to live in the northeastern United States, but now remain only in southeastern Canada.</p>
+      <img src="wolf3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      <p>Alaska is where the majority of the wild Arctic Wolves live. They are able to walk on the frozen ground due to the way their feet are designed. That allows them to shift their weight around and to keep a good grip. They don’t seem to mind the part of the year when it is dark for both day and night.Both Greenland and Canada have Arctic Wolves that are found in various locations as well. However, the numbers of them in these areas are drastically low. They have moved or they have perished due to a lack of food and habitat for them to survive.</p>
+      <img src="wolf5.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+  </div>
+</div>
+
+
+<a id="comment"></a>
+<div class="container-fluid bg-4 text-center">
+  
+
+<div class="container z-depth-1 my-5 px-0">
+
+  <!--Section: Content-->
+  <section class="p-5 my-md-5 text-center" 
+    style="background-image: url(wolf9.jpg); background-size: cover; background-position: center center;">
+
+    <!-- Section heading -->
+    <br>
+    <h3 class="text-center font-weight-bold text-white mt-5 mb-3">Comment Section</h3>
+    <!-- Section description -->
+    <br>
+    <h4 class="text-center font-weight-normal text-white mx-auto mb-4 pb-2">We would love to hear your comments!</h4><br>
+
+    <form class="mb-5 mx-md-5" action="insertcomment.php" method="POST">
+
+      <div class="row">
+        <div class="col-md-6 mb-4">
+
+          <!-- Name -->
+          <input type="text" name="fname" class="form-control" placeholder="Name">
+
+        </div>
+        <div class="col-md-6 mb-4">
+
+          <!-- Email -->
+          <input type="email" name="email" class="form-control" placeholder="Email">
+
+        </div>
+       
+      </div><br>
+
+      <div class="row">
+        
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+
+          <div class="form-group mb-4">
+            <textarea class="form-control rounded" name="comment" id="comment" rows="3" placeholder="Leave your comment"></textarea>
+          </div>
+
+          <div class="text-center">
+            <button type="submit" class="btn btn-elegant">Submit</button>
+          </div>
+
+        </div>
+      </div>
+
+    </form>
+
+  </section>
+  <!--Section: Content-->
+
+
+</div>
+
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-5 text-center">
+  <p>Yours Truly Me </p> 
+</footer>
+
+</body>
+</html>
